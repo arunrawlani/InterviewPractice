@@ -6,27 +6,14 @@
 *
 */
 
-String[] arr = new String[a.size()];
-for(int i = 0; i < a.size(); i++){
-  arr[i] = String.valueOf(a.get(i)); //converting everything to a string
-}
-
-//Now we are going to chnage the compare method such that it compares just string concat is larger than the other.
-Arrays.sort(arr, new Comparator(){
-  public int compare(String a, String b){
-    return (a+b).compareTo(b+a);
-  }
-});
-
 public class Solution {
-	// DO NOT MODIFY THE LIST
 	public String largestNumber(final List<Integer> a) {
 	    String[] arr = new String[a.size()];
 	    for(int i = 0; i < a.size(); i++){
-	        arr[i] = String.valueOf(a.get(i));
+	        arr[i] = String.valueOf(a.get(i)); //convert everything to a String
 	    }
 
-//Now we are going to change the compare method such that it compares strings concatenations and sorts them according to the ones that gives the highest numbers.
+	   //Now we are going to change the compare method such that it compares strings concatenations and sorts them according to the ones that gives the highest numbers.
 	    Arrays.sort(arr, new Comparator<String>(){
 	        public int compare(String a, String b){
 	            return (b+a).compareTo(a+b);
