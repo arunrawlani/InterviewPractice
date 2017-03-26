@@ -25,7 +25,7 @@ public class Solution {
 	        sb.append(s);
 	    }
 
-//truncates the extra zeroes
+	    //truncates the extra zeroes
 	    while(sb.charAt(0) == '0' && sb.length() > 1){
 	        sb.deleteCharAt(0);
 	    }
