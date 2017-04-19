@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class Q40_URLSearchEngine {
+public class Q42_URLSearchEngine {
 
 	public class TrieNode{
 		public HashMap<Character, TrieNode> childrenNode;
